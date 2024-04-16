@@ -1,0 +1,107 @@
+body {
+  background-image: url(''); /* यहाँ 'path_to_your_image.jpg' को आपकी इमेज के पथ से बदलें */
+  background-size: cover; /* यह सुनिश्चित करेगा कि इमेज पूरी स्क्रीन को कवर करे */
+  background-repeat: no-repeat; /* इमेज को दोहराया नहीं जाएगा */
+  background-position: center; /* इमेज को स्क्रीन के बीच में रखेगा */
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+header, footer { background-color: #333; color: white; }
+nav { background-color: darkgrey; }
+nav a { color: #333; padding: 10px; text-decoration: none; }
+.container { padding: 20px; }
+/* सर्च बार के लिए CSS */
+.search-container {
+  text-align: center;
+  margin: 10px 0;
+  
+}
+.no-decoration {
+    text-decoration: none;
+    color: black
+}
+
+
+
+.search-container input[type="text"] {
+  width: calc(85% - 42px);
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+.search-container button {
+  width: 42px;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background-color: #555;
+}
+
+/* Font Awesome आइकन के लिए स्टाइल */
+.fa-search {
+  color: white;
+}
+.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1px;
+    text-align: center;
+    margin-top: 10px
+  }
+    .h2 {
+    text-align: center;
+    font-size: 30px;
+  }
+  .headerh2 {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.1px;
+    text-align: left;
+    margin-top: 10px
+  }
+  .categories-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* यह एक्स-एक्सिस पर चार आइटम्स को बराबर जगह देगा */
+  gap: 10px; /* यह आइटम्स के बीच की जगह को नियंत्रित करेगा */
+  padding: 20px;
+}
+
+.category-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.category-item {
+  text-align: center;
+}
+
+.category-item img {
+  width: 100%; /* यह इमेज को आइटम की चौड़ाई के अनुसार बढ़ाएगा */
+  height: auto;
+  margin-bottom: 8px;
+}
+
+.category-item p {
+  margin: 0;
+  font-weight: bold;
+}

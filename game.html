@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Bookshelf</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    #bookshelf {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.book {
+  cursor: pointer;
+  /* Add more styles for book appearance */
+}
+.book img {
+  width:100%;
+  
+}
+#bookViewer {
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  background-color: white;
+  border: 1px solid black;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+
+#bookViewer.hidden {
+  display: none;
+}
+
+/* Add more styles for book viewer appearance */
+
+  </style>
+</head>
+<body>
+  <div id="bookshelf">
+    <!-- Book 1 -->
+    <div class="book" onclick="openBook('book1')">
+      <img src="c5avenger.png" alt="Book 1 Cover">
+      <div class="title">Book 1 Title</div>
+    </div>
+    <!-- Add more books here -->
+  </div>
+
+  <div id="bookViewer" class="hidden">
+    <div id="bookContent">
+      <!-- Book content will be loaded here -->
+    </div>
+    <button onclick="closeBook()">Close</button>
+  </div>
+
+  <script>
+    function openBook(bookId) {
+  // Load the content of the book based on bookId
+  var bookContent = document.getElementById('bookContent');
+  bookContent.innerHTML = 'Content of ' + bookId; // Replace with actual book content
+  document.getElementById('bookViewer').classList.remove('hidden');
+}
+
+function closeBook() {
+  document.getElementById('bookViewer').classList.add('hidden');
+}
+
+  </script>
+</body>
+</html>

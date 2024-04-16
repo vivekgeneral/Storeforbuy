@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Carousel</title>
+<style>
+  .carousel {
+    width: 100%;
+    overflow: hidden;
+  }
+  .carousel-container {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  .carousel-item {
+    min-width: 100%;
+  }
+  .carousel img {
+    width: 100%;
+    display: block;
+  }
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: 30px;
+  }
+  .prev { left: 10px; }
+  .next { right: 10px; }
+  .item-name {
+  font-family: 'Arial', sans-serif;
+  font-size: 20px;
+  color: black;
+  padding: 10px;
+  display: inline-block;
+  margin: 10px 0;
+}
+
+.star-rating {
+    direction: rtl;
+    display: inline-block;
+  }
+  .star-rating input[type="radio"] {
+    display: none;
+  }
+  .star-rating label {
+    color: #bbb;
+    font-size: 25px;
+    padding: 0;
+    cursor: pointer;
+  }
+  .star-rating label:hover,
+  .star-rating label:hover ~ label,
+  .star-rating input[type="radio"]:checked ~ label {
+    color: #f5b301;
+  }
+      .container {
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    
+    .form-group {
+      margin-bottom: 15px;
+    }
+    
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      color: #666;
+    }
+    
+    .form-group input[type="text"],
+    .form-group input[type="tel"],
+    .form-group select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    
+    .form-group input[type="radio"] {
+      margin-right: 5px;
+    }
+    
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #5cb
+    
+
+</style>
+</head>
+<body>
+
+<div class="carousel">
+  <button class="prev" onclick="moveSlide(-1)">❮</button>
+  <div class="carousel-container">
+    <!-- इमेजेज को यहाँ जोड़ें -->
+    <div class="carousel-item"><img src="notebook1.png" alt="Notebook 1"></div>
+    <div class="carousel-item"><img src="notebook2.png" alt="Notebook 2"></div>
+    <div class="carousel-item"><img src="notebook3.png" alt="Notebook 3"></div>
+    <!-- और इमेजेज जोड़ सकते हैं -->
+  </div>
+  <button class="next" onclick="moveSlide(1)">❯</button>
+</div>
+    <p class="item-name" name="itemName" id="itemName">try page</p>
+
+
+<div class="star-rating">
+  <input type="radio" id="5-stars" name="rating" value="5" />
+  <label for="5-stars">&#9733;</label>
+  <input type="radio" id="4-stars" name="rating" value="4" />
+  <label for="4-stars">&#9733;</label>
+  <input type="radio" id="3-stars" name="rating" value="3" />
+  <label for="3-stars">&#9733;</label>
+  <input type="radio" id="2-stars" name="rating" value="2" />
+  <label for="2-stars">&#9733;</label>
+  <input type="radio" id="1-star" name="rating" value="1" />
+  <label for="1-star">&#9733;</label>
+</div>
+
+<div id="rating-result">Please select a rating</div>
+
+
+
+  <div class="container">
+    <h2>Order Details</h2><br>
+    <form action="/submit-address">
+      <div class="form-group">
+        <label for="address">Deliver to:</label>
+        <input type="text" id="address" name="address" placeholder="Enter your address here">
+      </div><br>
+      <div class="form-group">
+        <label for="contact-no">Contact Number:</label>
+        <input type="tel" id="contact-no" name="contactNo" placeholder="+91">
+      </div><br>
+  
+      
+                 <div class="form-group">
+             <label for="quantity">Quantity:</label>
+             <select name="quantity" id="quantity">
+               <option value="50g">500g</option>
+               <option value="100g">1 kg</option>
+               <option value="150g">1.5 kg</option>
+               <option value="200g">2 kg</option>
+               <option value="250g">2.5 kg</option
+               <option value="aap ko agar aur quality  me chya to app lekh sakta ha">aagar aapko aur quality me chya too aap lekh sakta ha</option>
+             </select>
+           </div><br>
+      
+      
+      <div class="form-group">
+      <div class="form-group">
+        <label>Choose Payment type:</label><br>
+        <input type="radio" id="upi" name="paymentMethod" value="UPI">
+        <label for="upi">UPI</label><br>
+        <input type="radio" id="card" name="paymentMethod" value="Card/Credit">
+        <label for="card">Card/Credit</label><br>
+        <input type="radio" id="cod" name="paymentMethod" value="COD">
+        <label for="cod">Cash on Delivery</label>
+      </div><br>
+      <button type="button" onclick="sendWhatsAppMessage()">Continue</button>
+    </form>
+  </div>
+
+
+
+
+
+
+
+
+<script>
+let index = 0;
+function moveSlide(step) {
+  const slides = document.querySelectorAll('.carousel-item');
+  index = (index + step + slides.length) % slides.length;
+  document.querySelector('.carousel-container').style.transform = 'translateX(' + (-index * 100) + '%)';
+}
+function moveSlide(step) {
+  const slides = document.querySelectorAll('.carousel-item');
+  index = (index + step + slides.length) % slides.length;
+  document.querySelector('.carousel-container').style.transform = 'translateX(' + (-index * 100) + '%)';
+}
+
+
+
+
+document.querySelector('.star-rating').addEventListener('change', function(e) {
+    var rating = e.target.value;
+    document.getElementById('rating-result').textContent = 'You rated this ' + rating + ' out of 5.';
+  });
+  
+    function sendWhatsAppMessage() {
+    var address = document.getElementById('address').value;
+    var quantity = document.getElementById('quantity').value;
+    var paymentMethod = document.querySelector('input[name="paymentMethod"]:checked').value;
+    var itemName = 'Apple 1kg'; // यहाँ आपके आइटम का नाम लिखें
+    var message = encodeURIComponent(itemName + ' - मात्रा: ' + quantity + ', पता: ' + address + ' , भुगतान का तरीका: ' + paymentMethod); 
+    var whatsappUrl = 'https://wa.me/9619084299?text=' + message; // अपना WhatsApp नंबर यहाँ लिखें
+    window.open(whatsappUrl, '_blank');
+  }
+  document.querySelector('.star-rating').addEventListener('change', function(e) {
+    var rating = e.target.value;
+    document.getElementById('rating-result').textContent = 'You rated this ' + rating + ' out of 5.';
+  });
+  
+  
+</script>
+
+</body>
+</html>

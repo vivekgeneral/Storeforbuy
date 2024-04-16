@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="stylegrocery.css">
+ <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<title>Vivek General Store</title>
+<style>
+  body { font-family: Arial, sans-serif; }
+  header { background: #333; color: white; padding: 10px 0; text-align: center; }
+  nav { display: flex; justify-content: center; padding: 10px 0; background: #f4f4f4; }
+  nav a { text-decoration: none; margin: 0 15px; color: #333; }
+  .container { padding: 20px; }
+  footer { background: #333; color: white; text-align: center; padding: 10px 0; margin-top: 20px; }
+  .items-row {
+  display: flex;
+  justify-content: space-between;
+}
+ .search-suggestions {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: 100%;
+  background: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  display: none;
+}
+
+.search-suggestions p {
+  padding: 10px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.search-suggestions p:hover {
+  background: #ddd;
+}
+
+
+ 
+</style>
+</head>
+<body>
+<header>
+  <h1>Vivek general store</h1>
+  <!-- शॉपिंग कार्ट आइकन जोड़ने के लिए नीचे कोड -->
+  <div class="cart-icon" style="position: absolute; right: 25px; top: 50px;">
+    <i class="ri-shopping-cart-line"></i>
+  </div>
+</header>
+ <!-- अन्य स्टाइल्स और लिंक्स -->
+
+
+<nav>
+    
+  <a href="index.html">Home</a>
+  <a href="products.html">products</a>
+  <a href="/aboutussss.html">About us</a>
+  <a href="/new vivek project/contactus.html">Contant us</a>
+
+</nav>
+
+
+
+
+
+  <!-- नेविगेशन बार के नीचे सर्च बार विथ आइकन -->
+  <div class="search-container">
+  <form id="searchForm">
+    <input type="text" id="searchInput" placeholder="Search..." autocomplete="off">
+    <button type="submit">
+      <i class="ri-search-line"></i>
+    </button>
+  </form>
+</div>
+
+
+<div class="image-container">
+  <img src="toyland.png" alt="Your image description" class="image">
+</div>
+<style>
+  .image-container {
+  width: 100%; /* Set the desired width */
+  height: 200px; /* Set the desired height */
+  overflow: hidden; /* This will hide any extra parts of the image */
+}
+
+.image {
+  width: 100%; /* Make the image take up the full width of its container */
+}
+</style>
+<div class="age-range">
+  <div class="age-box">
+  
+    <img src="02.png" alt="Age range: 0-2">
+ 
+  </div>
+  <div class="age-box">
+    <img src="34.png" alt="Age range: 3-4">
+  </div>
+  <div class="age-box">
+    <img src="57.png" alt="Age range: 5-7">
+  </div>
+  <div class="age-box">
+    <img src="811.png" alt="Age range: 8-11">
+  </div>
+  <div class="age-box">
+    <img src="12.png" alt="Age range: 12+">
+  </div>
+</div>
+<style>
+  .age-range {
+  display: flex;
+  justify-content: space-around;
+  margin-top: -120px;
+}
+
+.age-box {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.age-box img {
+  width: 100%;
+  height: auto;
+}
+</style>
+<style>
+  .book-container {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+        padding: 20px;
+    background-color: #f5f5f5;
+
+  }
+  
+  .book {
+    flex: 0 0 auto;
+    margin-right: 20px;
+    /* Adjust the margin as needed */
+  }
+  .book {
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  .book img {
+    max-width: 100%;
+    height: auto;
+  }
+  .book-details {
+    margin-top: 15px;
+  }
+  
+  
+  .book-title {
+  font-size: 18px; /* Adjust the size as needed */
+  font-weight: bold; /* Makes the title bold */
+  color: #333; /* Sets the color of the title text */
+  margin-bottom: 10px; /* Adds space below the title */
+  white-space: normal; /* Allows the title to wrap to the next line */
+  overflow: visible; /* Shows any overflow */
+  max-width: 150px; /* Sets a maximum width for the title */
+}
+
+  
+  
+  
+  
+  
+  
+  
+  .book-author {
+    font-size: 1em;
+    color: #666;
+  }
+  .book-price {
+    font-size: 1.4em;
+    color: #e44d26;
+  }
+  .book-discount {
+    font-size: 1em;
+    text-decoration: line-through;
+    color: #999;
+  }
+  .book img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.class12 {
+  background-color: #f5f5f5;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-left: 10px;
+  
+}
+.long {
+  padding-left: 10px;
+  background-color: #f5f5f5;
+  font-size: 20px;
+  color: #e44d26;
+}
+
+</style>
+</head>
+<body>
+    <div class="class12" >Classmate & Rush Note Books</div>
+<div class="long">Long NoteBooks</div>
+<div class="book-container" >
+
+  <div class="book">
+      <a href="book2.html" style="text-decoration: none;">
+    <img src="notebook1.png" alt="Note book">
+    <div class="book-details">
+      <div class="book-title">200 Pages A4 Size Bright Notebook</div>
+      <div class="book-author">Classmate</div>
+      <div class="book-price">₹589</div>
+      <div class="book-discount">₹659</div>
+    </div>
+    </a>
+  </div>
+  <!-- Book 2 -->
+  <div class="book">
+    <a href="classmate2.html" style="text-decoration: none;">
+    <img src="notebook2.png" alt="HAPPILY NEVER AFTER by Lynn Painter">
+    <div class="book-details">
+      <div class="book-title">Classmate 120 Pages Long Notebook </div>
+      <div class="book-author">Classmate</div>
+      <div class="book-price">₹220</div>           <div class="book-discount">₹228</div>
+
+    </div>
+    </a>
+  </div>
+  <!-- Book 3 -->
+  <div class="book">
+    <a href="classmates3.html" style="text-decoration: none;">
+    <img src="classmate31.png" alt="The 5 AM Club by Robin Sharma">
+    <div class="book-details">
+      <div class="book-title">Classmate Notebook - Single Line, 172 Pages</div>
+      <div class="book-author">Classmate</div>
+      <div class="book-price">₹198</div>
+      <div class="book-discount">₹207</div>
+    </div>
+   </a>
+  </div>
+  
+    <div class="book">
+      <a href="cassmate4.html" style="text-decoration: none;">
+      <img src="clasmate4.png" alt="book">
+      <div class="book-details">
+        <div class="book-title">Rush Spiral Notebook Ruled A4 Size 200 Pages</div>
+        <div class="book-author">Rush Note Book</div>
+        <div class="book-price">₹175</div>
+        <div class="book-discount">₹150</div>
+      </div>
+      </a>
+    </div>
+
+  
+      <div class="book">
+      <a href="cassmate4.html" style="text-decoration: none;">
+      <img src="c5avenger.png" alt="book">
+      <div class="book-details">
+        <div class="book-title">Rush Spiral Notebook Ruled A4 Size 200 Pages </div>
+        <div class="book-author">Rush Note Book</div>
+        <div class="book-price">₹175</div>
+        <div class="book-discount">₹150</div>
+      </div>
+      </a>
+    </div>
+
+  
+  
+  
+  
+  
+</div>
+
+     <div class="class12" >Classmate & Rush Note Books</div>
+<div class="long">Short/Medium NoteBooks</div>
+<div class="book-container" >
+
+  <div class="book">
+      <a href="book2.html" style="text-decoration: none;">
+    <img src="s1.png" alt="Note book">
+    <div class="book-details">
+      <div class="book-title">Classmate Notebook - Single Line, 140 Pages, 240 mm x 180 mm - Pack Of 4</div>
+      <div class="book-author">Classmate</div>
+      <div class="book-price">₹190</div>
+      <div class="book-discount">₹200</div>
+    </div>
+    </a>
+  </div>
+  <!-- Book 2 -->
+  <div class="book">
+    <a href="classmate2.html" style="text-decoration: none;">
+    <img src="th.jpeg" alt="HAPPILY NEVER AFTER by Lynn Painter">
+    <div class="book-details">
+      <div class="book-title">Classmate Hard Cover Doubled Ruled Notebook Engine Print </div>
+      <div class="book-author">Classmate</div>
+      <div class="book-price">₹23</div>           <div class="book-discount">₹25</div>
+
+    </div>
+    </a>
+  </div>
+  <!-- Book 3 -->
+  <div class="book">
+    <a href="classmates3.html" style="text-decoration: none;">
+    <img src="c3.png" alt="The 5 AM Club by Robin Sharma">
+    <div class="book-details">
+      <div class="book-title">Classmate Notebook - Four Line with Gap </div>
+      <div class="book-author">Classmate</div>
+      <div class="book-price">₹25</div>
+      <div class="book-discount">₹29</div>
+    </div>
+   </a>
+  </div>
+  
+    <div class="book">
+      <a href="cassmate4.html" style="text-decoration: none;">
+      <img src="c4.png" alt="book">
+      <div class="book-details">
+        <div class="book-title">classmate & rush Notebook Ruled A4 Size 200 Pages</div>
+        <div class="book-author">Rush Note Book</div>
+        <div class="book-price">₹175</div>
+        <div class="book-discount">₹150</div>
+      </div>
+      </a>
+    </div>
+
+  
+      <div class="book">
+      <a href="cassmate4.html" style="text-decoration: none;">
+      <img src="c5avenger.png" alt="book">
+      <div class="book-details">
+        <div class="book-title">Rush Spiral Notebook Ruled A4 Size 200 Pages </div>
+        <div class="book-author">Rush Note Book</div>
+        <div class="book-price">₹175</div>
+        <div class="book-discount">₹150</div>
+      </div>
+      </a>
+    </div>
+
+        <div class="book">
+          <a href="cassmate4.html" style="text-decoration: none;">
+            <img src="c6.png" alt="book">
+            <div class="book-details">
+              <div class="book-title">Classmate 240X180mm Notebook - Five Lines with Gap </div>
+              <div class="book-author">Rush Note Book</div>
+              <div class="book-price">₹38</div>
+              <div class="book-discount">₹44</div>
+            </div>
+          </a>
+        </div>
+  
+  
+  
+  
+</div>
+
+
+
+
+     <div class="class12" >Classmate Avengers NoteBooks</div>
+<div class="long">
+  Long/Medium/Short Types
+</div>
+<div class="book-container" >
+
+  <div class="book">
+      <a href="cassmate4.html" style="text-decoration: none;">
+    <img src="c5avenger.png" alt="Note book">
+    <div class="book-details">
+      <div class="book-title">Classmate Notebook - Single Line, 140 Pages, 240 mm x 180 mm - Pack Of 4</div>
+      <div class="book-author">Classmate</div>
+      <div class="book-price">₹175</div>
+      <div class="book-discount">₹200</div>
+    </div>
+    </a>
+  </div>
+  <!-- Book 2 -->
+  <div class="book">
+    <a href="ca1.html" style="text-decoration: none;">
+    <img src="ca1.png" alt="classmate avenger" style="height:200px;">
+    <div class="book-details">
+      <div class="book-title">Classmate Pulse 1 Subject Notebook , Soft Cover, 180 Pages, Single Line, Pack of 4</div>
+      <div class="book-author">Classmate</div>
+      <div class="book-price">₹273</div>           <div class="book-discount">₹320</div>
+
+    </div>
+    </a>
+  </div>
+  <!-- Book 3 -->
+  <div class="book">
+    <a href="ca3.html" style="text-decoration: none;">
+    <img src="ca3.png" alt="The 5 AM Club by Robin Sharma" style="height:200px;">
+    <div class="book-details">
+      <div class="book-title">CRAFT MANIACS AVENGERS ASSEMBLE  & FREE KEYCHAIN BEST GIFT</div>
+      <div class="book-author">Classmate</div>
+      <div class="book-price">₹225</div>
+      <div class="book-discount">₹229</div>
+    </div>
+   </a>
+  </div>
+  
+    <div class="book">
+      <a href="cassmate4.html" style="text-decoration: none;">
+      <img src="c4.png" alt="book">
+      <div class="book-details">
+        <div class="book-title">classmate & rush Notebook Ruled A4 Size 200 Pages</div>
+        <div class="book-author">Rush Note Book</div>
+        <div class="book-price">₹175</div>
+        <div class="book-discount">₹150</div>
+      </div>
+      </a>
+    </div>
+
+  
+      <div class="book">
+      <a href="cassmate4.html" style="text-decoration: none;">
+      <img src="c5avenger.png" alt="book">
+      <div class="book-details">
+        <div class="book-title">Rush Spiral Notebook Ruled A4 Size 200 Pages </div>
+        <div class="book-author">Rush Note Book</div>
+        <div class="book-price">₹175</div>
+        <div class="book-discount">₹150</div>
+      </div>
+      </a>
+    </div>
+
+        <div class="book">
+          <a href="cassmate4.html" style="text-decoration: none;">
+            <img src="c6.png" alt="book">
+            <div class="book-details">
+              <div class="book-title">Classmate 240X180mm Notebook - Five Lines with Gap </div>
+              <div class="book-author">Rush Note Book</div>
+              <div class="book-price">₹38</div>
+              <div class="book-discount">₹44</div>
+            </div>
+          </a>
+        </div>
+  
+  
+  
+  
+</div>
+
+
+
+
+     <div class="class12" >Toyland Express</div>
+<div class="long">
+  All Ages Types
+</div>
+<div class="book-container" >
+
+  <div class="book">
+      <a href="toy1.html" style="text-decoration: none;">
+    <img src="toy1.png" alt="badminton" style="height:200px;">
+    <div class="book-details">
+      <div class="book-title">Plastic Badminton Racquet + Free 1 Pcs Plastic Shuttle 1 Ball Toy </div>
+      <div class="book-author">Vivek Store</div>
+      <div class="book-price">₹30</div>
+      <div class="book-discount">₹40</div>
+    </div>
+    </a>
+  </div>
+  <!-- Book 2 -->
+  <div class="book">
+    <a href="toy2.html" style="text-decoration: none;">
+    <img src="toybat2.png" alt="classmate avenger" style="height:200px;">
+    <div class="book-details">
+      <div class="book-title">Kids Plastic Bat Ball Set, Childs Age Group: 4-6  Years For Play</div>
+      <div class="book-author">Classmate</div>
+      <div class="book-price">₹30</div>           <div class="book-discount">₹32</div>
+
+    </div>
+    </a>
+  </div>
+  <!-- Book 3 -->
+  <div class="book">
+    <a href="toy31.html" style="text-decoration: none;">
+    <img src="toy3.png" alt=" Sharma" style="height:200px;">
+    <div class="book-details">
+      <div class="book-title">Premium Poke-mone Playing Card Board Game Obsidian Flames 5 Pack</div>
+      <div class="book-author">Vivek Store</div>
+      <div class="book-price">₹396</div>
+      <div class="book-discount">₹999</div>
+    </div>
+   </a>
+  </div>
+  
+    <div class="book">
+      <a href="" style="text-decoration: none;">
+      <img src="toy33.png" alt="book">
+      <div class="book-details">
+        <div class="book-title">Pokemon card packet Best Card premium Quality And Premium Card</div>
+        <div class="book-author">Rush Note Book</div>
+        <div class="book-price">₹175</div>
+        <div class="book-discount">₹150</div>
+      </div>
+      </a>
+    </div>
+
+  
+      <div class="book">
+      <a href="cassmate4.html" style="text-decoration: none;">
+      <img src="c5avenger.png" alt="book">
+      <div class="book-details">
+        <div class="book-title">Rush Spiral Notebook Ruled A4 Size 200 Pages </div>
+        <div class="book-author">Rush Note Book</div>
+        <div class="book-price">₹175</div>
+        <div class="book-discount">₹150</div>
+      </div>
+      </a>
+    </div>
+
+        <div class="book">
+          <a href="cassmate4.html" style="text-decoration: none;">
+            <img src="c6.png" alt="book">
+            <div class="book-details">
+              <div class="book-title">Classmate 240X180mm Notebook - Five Lines with Gap </div>
+              <div class="book-author">Rush Note Book</div>
+              <div class="book-price">₹38</div>
+              <div class="book-discount">₹44</div>
+            </div>
+          </a>
+        </div>
+  
+  
+  
+  
+</div>
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+

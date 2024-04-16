@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pop-Up Floating Calculator</title>
+<style>
+  /* Calculator's basic styling */
+  #calculator {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    height: 420px;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    box-shadow: 0px 0px 10px #000;
+    display: none; /* Initially hidden */
+    z-index: 1000; /* Ensure it's above other elements */
+  }
+  /* Additional styles here */
+</style>
+</head>
+<body>
+
+<!-- Calculator HTML -->
+<div id="calculator">
+  <!-- Calculator display -->
+  <input type="text" id="calc-display" readonly>
+  <!-- Calculator buttons -->
+  <button onclick="input('1')">1</button>
+  <button onclick="input('2')">2</button>
+  <!-- More buttons here -->
+  <button onclick="calculate()">=</button>
+</div>
+
+<!-- Floating button to show/hide calculator -->
+<button onclick="toggleCalculator()">Calculator</button>
+
+<script>
+  // Function to show/hide the calculator
+  function toggleCalculator() {
+    var calculator = document.getElementById('calculator');
+    calculator.style.display = calculator.style.display === 'none' ? 'block' : 'none';
+  }
+
+  // Function to handle input
+  function input(value) {
+    document.getElementById('calc-display').value += value;
+  }
+
+  // Function to perform calculation
+  function calculate() {
+    var display = document.getElementById('calc-display');
+    display.value = eval(display.value);
+  }
+
+  // Clear the calculator display
+  function clearDisplay() {
+    document.getElementById('calc-display').value = '';
+  }
+</script>
+
+</body>
+</html>

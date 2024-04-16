@@ -1,0 +1,1733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="stylegrocery.css">
+ <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<title>Vivek General Store</title>
+<style>
+  body { font-family: Arial, sans-serif; }
+  header { background: #333; color: white; padding: 10px 0; text-align: center; }
+  nav { display: flex; justify-content: center; padding: 10px 0; background: #f4f4f4; }
+  nav a { text-decoration: none; margin: 0 15px; color: #333; }
+  .container { padding: 20px; }
+  footer { background: #333; color: white; text-align: center; padding: 10px 0; margin-top: 20px; }
+  .items-row {
+  display: flex;
+  justify-content: space-between;
+}
+ 
+ 
+</style>
+</head>
+<body>
+<header>
+  <h1>Vivek general store</h1>
+  <!-- शॉपिंग कार्ट आइकन जोड़ने के लिए नीचे कोड -->
+  <div class="cart-icon" style="position: absolute; right: 25px; top: 50px;">
+    <i class="ri-shopping-cart-line"></i>
+  </div>
+</header>
+ <!-- अन्य स्टाइल्स और लिंक्स -->
+
+
+<nav>
+    
+  <a href="index.html">Home</a>
+  <a href="products.html">products</a>
+  <a href="/aboutussss.html">About us</a>
+  <a href="/new vivek project/contactus.html">Contant us</a>
+
+</nav>
+
+
+
+
+
+  <!-- नेविगेशन बार के नीचे सर्च बार विथ आइकन -->
+  <div class="search-container">
+  <form id="searchForm">
+    <input type="text" id="searchInput" placeholder="Search..." autocomplete="off">
+    <button type="submit">
+      <i class="ri-search-line"></i>
+    </button>
+  </form>
+</div>
+
+    
+    
+    <div class="header">
+  <h1>Shop by Category</h1>
+</div>
+
+<!-- श्रेणियों के लिए HTML -->
+<div class="categories-container">
+
+  <ul class="category-list" id="searchResults">
+    <li class="category-item">
+      <a href="#fruits" onclick="scrollToSection('fruits')" class="no-decoration">
+      <img src="IMG_20240316_182620.jpg" alt="Fruits,Vegetables">
+      </a>
+      <p>
+       Fruits & Vegetables
+     
+      </p>
+    </li>
+    <!-- अन्य श्रेणियों के लिए इसी तरह के लिस्ट आइटम्स जोड़ें -->
+  </ul>
+    <ul class="category-list" id="searchResults">
+      <li class="category-item">
+      <a href="#oil" onclick="scrollToSection('fruits')" class="no-decoration">
+
+        <img src="IMG_20240316_182843.jpg" alt="Fruits & Vegetables">
+        
+        <p>Oil,Masala & Sauces</p>
+        </a>
+      </li>
+      <!-- अन्य श्रेणियों के लिए इसी तरह के लिस्ट आइटम्स जोड़ें -->
+    </ul>
+   <ul class="category-list" id="searchResults">
+
+        <li class="category-item">
+      <a href="#cold" onclick="scrollToSection('cold')" class="no-decoration">
+
+          <img src="IMG_20240316_182655.jpg" alt="Fruits & Vegetables">
+          <p>Colddrinks & Juices</p>
+         </a>
+        </li>
+        <!-- अन्य श्रेणियों के लिए इसी तरह के लिस्ट आइटम्स जोड़ें -->
+      </ul>
+      <ul class="category-list" id="searchResults">
+              <li class="category-item">
+          <a href="#choc" onclick="scrollToSection('choc')" class="no-decoration">
+
+                <img src="IMG_20240316_182638.jpg" alt="Fruits & Vegetables">
+                  <p>Choclates & Icecream</p>
+</a>
+              </li>
+              <!-- अन्य श्रेणियों के लिए इसी तरह के लिस्ट आइटम्स जोड़ें -->
+            </ul>
+            
+      
+</div>
+  <div class="categories-container">
+      <ul class="category-list">
+        <li class="category-item">
+          <img src="IMG_20240316_182721.jpg" alt="Fruits & Vegetables">
+                  <p>Cleaning & Household</p>
+
+        </li>
+        <!-- अन्य श्रेणियों के लिए इसी तरह के लिस्ट आइटम्स जोड़ें -->
+      </ul>
+            <ul class="category-list">
+        <li class="category-item">
+          <img src="IMG_20240316_182738.jpg" alt="">
+          <p>lights & households</p>
+        </li>
+        <!-- अन्य श्रेणियों के लिए इसी तरह के लिस्ट आइटम्स जोड़ें -->
+      </ul>
+            <ul class="category-list">
+        <li class="category-item">
+          <img src="IMG_20240316_182803.jpg" alt="Fruits & Vegetables">
+          <p>Breakfast food</p>
+        </li>
+        <!-- अन्य श्रेणियों के लिए इसी तरह के लिस्ट आइटम्स जोड़ें -->
+      </ul>
+            <ul class="category-list">
+        <li class="category-item">
+          <img src="IMG_20240316_182843.jpg" alt="Fruits & Vegetables">
+          <p>fruits & vegetables </p>
+        </li>
+        <!-- अन्य श्रेणियों के लिए इसी तरह के लिस्ट आइटम्स जोड़ें -->
+      </ul>
+      </div>
+      
+      
+      
+      
+      
+          <div class="header">
+  <h1>Have you Explored?</h1>
+</div>
+<div class="categories-container">
+
+  <ul class="category-list">
+    <li class="category-item">
+      <img src="IMG_20240316_223929.jpg" alt="Detergent">
+              <p>Detergents</p>
+
+    </li>
+    <!-- अन्य श्रेणियों के लिए इसी तरह के लिस्ट आइटम्स जोड़ें -->
+  </ul>
+    <ul class="category-list">
+      <li class="category-item">
+              <img src="IMG_20240316_224232.jpg" alt="Detergent">
+            <p>Disinfectants</p>
+
+      </li>
+      <!-- अन्य श्रेणियों के लिए इसी तरह के लिस्ट आइटम्स जोड़ें -->
+    </ul>
+      <ul class="category-list">
+        <li class="category-item">
+          <img src="coffee.png" alt="Fruits & Vegetables">
+          <p>Cold Coffee </p>
+        </li>
+        <!-- अन्य श्रेणियों के लिए इसी तरह के लिस्ट आइटम्स जोड़ें -->
+      </ul>
+            <ul class="category-list">
+              <li class="category-item">
+                <img src="shaving1.png" alt="Fruits & Vegetables">
+                  <p>Shaving Essential</p>
+
+              </li>
+              <!-- अन्य श्रेणियों के लिए इसी तरह के लिस्ट आइटम्स जोड़ें -->
+            </ul>
+            
+      
+</div>
+  <div class="categories-container">
+      <ul class="category-list">
+        <li class="category-item">
+          <img src="IMG_20240316_182721.jpg" alt="Fruits & Vegetables">
+                  <p>Cleaning & Household</p>
+
+        </li>
+        <!-- अन्य श्रेणियों के लिए इसी तरह के लिस्ट आइटम्स जोड़ें -->
+      </ul>
+            <ul class="category-list">
+        <li class="category-item">
+          <img src="IMG_20240316_182738.jpg" alt="">
+          <p>lights & households</p>
+        </li>
+        <!-- अन्य श्रेणियों के लिए इसी तरह के लिस्ट आइटम्स जोड़ें -->
+      </ul>
+            <ul class="category-list">
+        <li class="category-item">
+          <img src="IMG_20240316_182803.jpg" alt="Fruits & Vegetables">
+          <p>Breakfast food</p>
+        </li>
+        <!-- अन्य श्रेणियों के लिए इसी तरह के लिस्ट आइटम्स जोड़ें -->
+      </ul>
+            <ul class="category-list">
+        <li class="category-item">
+          <img src="IMG_20240316_182843.jpg" alt="Fruits & Vegetables">
+          <p>fruits & vegetables </p>
+        </li>
+        <!-- अन्य श्रेणियों के लिए इसी तरह के लिस्ट आइटम्स जोड़ें -->
+      </ul>
+      </div>
+      
+      <div class="header">
+        <h1 id="fruits">Fruits & Vegetables</h1>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+<div class="items-scroll-wrapper">
+ <!-- आइटम 1 -->
+<div class="items-row">
+   <div class="item-container" id="item1" id="searchResults"onclick="location.href='greenpeac.html';">
+     <img src="greenpiece.png" alt="Item 1 Image" style="height: 120px;">
+     <div class="item-info">
+       <h4 class="item-name" class="h4" style="font-size: 17px; ">Green peac fresh and green </h4>
+       <div> <del style="color: grey;">60</del> ₹48</div>
+       <p style="color: green; margin-block:2px ">Fresh</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <!-- आइटम 2 -->
+   <div class="item-container" id="item2" onclick="location.href='coriander.html';">
+     <img src="/new vivek project/IMG_20240330_101303.jpg" alt="Item 2 Image" style="height: 119px">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Fresh Coriander In Best Price</h3> <del>22</del> ₹20
+       <p style="color: green; margin-block:2px ">best deal</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <div class="item-container" id="item2" id=""onclick="location.href='apple.html';">
+     <img src="apple.png" alt="Item 3 Image" style="height: 120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Apple Delicious Red Sweet Apple</h3>
+       <del style="color: grey;">199</del> ₹120
+       <p style="color: green; margin-block:2px ">Best deal</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+
+
+       <div class="item-container" id="item1" onclick="location.href='onion.html';">
+     <img src="onion.png" alt="Item 1 Image" style="height: 120px;">
+     <div class="item-info">
+       <h4 class="item-name" style="font-size: 17px;">Onion kandda best price</h4>
+       <div> <del style="color: grey;">22</del> ₹20</div>
+       <p style="color: green; margin-block:2px ">Free Delivery</p>
+       <div id="searchResults" class="search-results"></div>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <!-- आइटम 2 -->
+   <div class="item-container" id="item2" onclick="location.href='potato.html';">
+     <img src="potato.png" alt="potatos " style="height:120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Potatos Aalu best and clean potatos <br> <del>40</del> ₹30</h3>
+       <p style="color: green; margin-block:2px ">best deal</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <div class="item-container" id="item2" onclick="location.href='/tomato.html''';">
+     <img src="tomato.png" alt="Item 3 Image" style="height: 120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Fresh Farm Tomatoes Red Fresh</h3>
+       <del style="color: grey;">42</del> ₹40
+       <p style="color: green; margin-block:2px ">Best deal</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <div class="item-container" id="item1" onclick="location.href='greenchilli.html';">
+     <img src="chilli.png" alt="Item 1 Image" style="height: 120px;">
+     <div class="item-info">
+       <h4 class="item-name" style="font-size: 17px;">Fresh Green Chilli Spicer Green Healthy</h4>
+       <div> <del style="color: grey;">22</del> ₹20</div>
+       <p style="color: green; margin-block:2px ">Free Delivery</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <!-- आइटम 2 -->
+   <div class="item-container" id="item2" onclick="location.href='lemon.html';">
+     <img src="lemon.png" alt="Item 2 Image" style="height: 120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Fresh Lemon Big Size Lemon <br><del>20</del> ₹10</h3>
+       <p style="color: green; margin-block:2px ">Fresh</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <div class="item-container" id="item2" onclick="location.href='ginger.html';">
+     <img src="/new vivek project/ginder.png" alt="Item 3 Image" style="height: 120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Ginger Fresh Cleaned Ginger </h3>
+       <del style="color: grey;">12</del> ₹10
+       <p style="color: green; margin-block:2px ">Fresh </p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+
+
+       <div class="item-container" id="item1" onclick="location.href='coconut.html';">
+     <img src="coconut.png" alt="Item 1 Image" style="height: 120px;">
+     <div class="item-info">
+       <h4 class="item-name" style="font-size: 17px;">Coconut Big Size Clean White Brown Coconut </h4>
+       <div> <del style="color: grey;">55</del> ₹50</div>
+       <p style="color: green; margin-block:2px ">Free Delivery</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <!-- आइटम 2 -->
+   <div class="item-container" id="item2" onclick="location.href='redchilli.html';">
+     <img src="redchilli.png" alt="Item 2 Image" style="height: 120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Red spice Dry Chilli Masala <br><del>60</del> ₹50</h3>
+       <p style="color: green; margin-block:2px ">Red Spice</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+
+    
+</div>
+
+</div>
+  
+
+      <div class="header">
+        <h1 id="oil">Oils, Masala and Sauces</h1>
+      </div>
+      
+<div class="items-scroll-wrapper">
+ <!-- आइटम 1 -->
+<div class="items-row">
+   <div class="item-container" id="item1" id="searchResults"onclick="location.href='fortune.html';">
+     <img src="fortune.png" alt="Item 1 Image" style="height: 120px;">
+     <div class="item-info">
+       <h4 class="item-name" class="h4" style="font-size: 17px; ">Fortune Sunlite Refined Sunflower Oil, 1l</h4>
+       <div> <del style="color: grey;">150</del> ₹120</div>
+       <p style="color: green; margin-block:2px ">Best Deal</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <!-- आइटम 2 -->
+   <div class="item-container" id="item2" onclick="location.href='gemini.html';">
+     <img src="gemin.png" alt="Item 2 Image" style="height: 119px">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Gemini Sunflower Refined Oil 1 li</h3> <del>139</del> ₹120
+       <p style="color: green; margin-block:2px ">best deal</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <div class="item-container" id="item2" id=""onclick="location.href='ruchigoldoil.html';">
+     <img src="ruchigold.png" alt="Item 3 Image" style="height: 120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Ruchi Gold Palmolin Oil for cooking, Frying, etc</h3>
+       <del style="color: grey;">125</del> ₹100
+       <p style="color: green; margin-block:2px ">Best deal</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+
+
+       <div class="item-container" id="item1" onclick="location.href='sagollataotal.html';">
+     <img src="saffolla.png" alt="Item 1 Image" style="height: 120px;">
+     <div class="item-info">
+       <h4 class="item-name" style="font-size: 17px;">saffolla oil, sunflower oil Refined oil</h4>
+       <div> <del style="color: grey;">120</del> ₹100</div>
+       <p style="color: green; margin-block:2px ">Free Delivery</p>
+       <div id="searchResults" class="search-results"></div>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <!-- आइटम 2 -->
+   <div class="item-container" id="item2" onclick="location.href='tigeroil250ml.html';">
+     <img src="tigeroil.png" alt="potatos " style="height:120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Tiger Sunflower Oil Bottle 250ml<br> <del>49</del> ₹55</h3>
+       <p style="color: green; margin-block:2px ">best deal</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <div class="item-container" id="item2" onclick="location.href='tigeroil500ml.html';">
+     <img src="tigeroil.png" alt="Item 3 Image" style="height: 120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Tiger Oil 500ml Bottle</h3>
+       <del style="color: grey;">85</del> ₹100
+       <p style="color: green; margin-block:2px ">Best deal</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <div class="item-container" id="item1" onclick="location.href='tigeroil1litre.html';">
+     <img src="tigeroil.png" alt="Item 1 Image" style="height: 120px;">
+     <div class="item-info">
+       <h4 class="item-name" style="font-size: 17px;">Tiger Oil 1 litre bottle oil sunflower oil</h4>
+       <div> <del style="color: grey;">160</del> ₹140</div>
+       <p style="color: green; margin-block:2px ">Free Delivery</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <!-- आइटम 2 -->
+   <div class="item-container" id="item2" onclick="location.href='lemon.html';">
+     <img src="jar1oil.png" alt="Item 2 Image" style="height: 120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Fortune sunlight Refined Sunflower Oil, 5 litre jar<br><del>705</del> ₹610</h3>
+       <p style="color: green; margin-block:2px ">free delivery</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <div class="item-container" id="item2" onclick="location.href='ginger.html';">
+     <img src="/new vivek project/ginder.png" alt="Item 3 Image" style="height: 120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Ginger Fresh Cleaned Ginger </h3>
+       <del style="color: grey;">12</del> ₹10
+       <p style="color: green; margin-block:2px ">Fresh </p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+
+
+       <div class="item-container" id="item1" onclick="location.href='coconut.html';">
+     <img src="coconut.png" alt="Item 1 Image" style="height: 120px;">
+     <div class="item-info">
+       <h4 class="item-name" style="font-size: 17px;">Coconut Big Size Clean White Brown Coconut </h4>
+       <div> <del style="color: grey;">55</del> ₹50</div>
+       <p style="color: green; margin-block:2px ">Free Delivery</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <!-- आइटम 2 -->
+   <div class="item-container" id="item2" onclick="location.href='redchilli.html';">
+     <img src="redchilli.png" alt="Item 2 Image" style="height: 120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Red spice Dry Chilli Masala <br><del>60</del> ₹tp</h3>
+       <p style="color: green; margin-block:2px ">Red Spice</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+
+    
+</div>
+
+</div>
+<div class="header" id="cold">
+  <p>Colddrinks and Juices</p>
+</div>
+<div class="items-scroll-wrapper">
+ <!-- आइटम 1 -->
+<div class="items-row">
+   <div class="item-container" id="item1" id="searchResults"onclick="location.href='thumbsup.html';">
+     <img src="thumsup.png" alt="Item 1 Image" style="height: 120px;">
+     <div class="item-info">
+       <h4 class="item-name" class="h4" style="font-size: 17px; ">Thumbs Up Cold Drink 500ml </h4>
+       <div> <del style="color: grey;">45</del> ₹40</div>
+       <p style="color: green; margin-block:2px ">Cold </p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <!-- आइटम 2 -->
+   <div class="item-container" id="item2" onclick="location.href='sting.html';">
+     <img src="sting.png" alt="Item 2 Image" style="height: 119px">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Sting Cold Drink 500ml</h3> <del>22</del> ₹20
+       <p style="color: green; margin-block:2px ">best deal</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <div class="item-container" id="item2" id=""onclick="location.href='cocacola.html';">
+     <img src="cocacola.png" alt="Item 3 Image" style="height: 120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Coca~Cola Cold Drink 500ml </h3>
+       <del style="color: grey;">45</del> ₹40
+       <p style="color: green; margin-block:2px ">Best deal</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+
+
+       <div class="item-container" id="item1" onclick="location.href='onion.html';">
+     <img src="mazza10.png" alt="Item 1 Image" style="height: 120px;">
+     <div class="item-info">
+       <h4 class="item-name" style="font-size: 17px;">Maaza Cold Sweet Drink ₹10 </h4>
+       <div> <del style="color: grey;">12</del> ₹10</div>
+       <p style="color: green; margin-block:2px ">Free Delivery</p>
+       <div id="searchResults" class="search-results"></div>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <!-- आइटम 2 -->
+   <div class="item-container" id="item2" onclick="location.href='potato.html';">
+     <img src="soda.png" alt="potatos " style="height:120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Kinley Cold Soda 750 ml Bottle Chilled<br> <del>30</del> ₹20</h3>
+       <p style="color: green; margin-block:2px ">best deal</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <div class="item-container" id="item2" onclick="location.href='/tomato.html''';">
+     <img src="tomato.png" alt="Item 3 Image" style="height: 120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Fresh Farm Tomatoes Red Fresh</h3>
+       <del style="color: grey;">42</del> ₹40
+       <p style="color: green; margin-block:2px ">Best deal</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <div class="item-container" id="item1" onclick="location.href='greenchilli.html';">
+     <img src="chilli.png" alt="Item 1 Image" style="height: 120px;">
+     <div class="item-info">
+       <h4 class="item-name" style="font-size: 17px;">Fresh Green Chilli Spicer Green Healthy</h4>
+       <div> <del style="color: grey;">22</del> ₹20</div>
+       <p style="color: green; margin-block:2px ">Free Delivery</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <!-- आइटम 2 -->
+   <div class="item-container" id="item2" onclick="location.href='lemon.html';">
+     <img src="lemon.png" alt="Item 2 Image" style="height: 120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Fresh Lemon Big Size Lemon <br><del>20</del> ₹10</h3>
+       <p style="color: green; margin-block:2px ">Fresh</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <div class="item-container" id="item2" onclick="location.href='ginger.html';">
+     <img src="/new vivek project/ginder.png" alt="Item 3 Image" style="height: 120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Ginger Fresh Cleaned Ginger </h3>
+       <del style="color: grey;">12</del> ₹10
+       <p style="color: green; margin-block:2px ">Fresh </p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+
+
+       <div class="item-container" id="item1" onclick="location.href='coconut.html';">
+     <img src="coconut.png" alt="Item 1 Image" style="height: 120px;">
+     <div class="item-info">
+       <h4 class="item-name" style="font-size: 17px;">Coconut Big Size Clean White Brown Coconut </h4>
+       <div> <del style="color: grey;">55</del> ₹50</div>
+       <p style="color: green; margin-block:2px ">Free Delivery</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <!-- आइटम 2 -->
+   <div class="item-container" id="item2" onclick="location.href='redchilli.html';">
+     <img src="redchilli.png" alt="Item 2 Image" style="height: 120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Red spice Dry Chilli Masala <br><del>60</del> ₹tp</h3>
+       <p style="color: green; margin-block:2px ">Red Spice</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+
+    
+</div>
+
+</div>
+  <div class="header" id="choc">
+    <p>Chocolates and Icecreams</p>
+  </div>
+<div class="items-scroll-wrapper">
+ <!-- आइटम 1 -->
+<div class="items-row">
+   <div class="item-container" id="item1" id="searchResults"onclick="location.href='greenpeac.html';">
+     <img src="greenpiece.png" alt="Item 1 Image" style="height: 120px;">
+     <div class="item-info">
+       <h4 class="item-name" class="h4" style="font-size: 17px; ">Green peac fresh and green </h4>
+       <div> <del style="color: grey;">60</del> ₹48</div>
+       <p style="color: green; margin-block:2px ">Fresh</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <!-- आइटम 2 -->
+   <div class="item-container" id="item2" onclick="location.href='coriander.html';">
+     <img src="/new vivek project/IMG_20240330_101303.jpg" alt="Item 2 Image" style="height: 119px">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Fresh Coriander In Best Price</h3> <del>22</del> ₹20
+       <p style="color: green; margin-block:2px ">best deal</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <div class="item-container" id="item2" id=""onclick="location.href='apple.html';">
+     <img src="apple.png" alt="Item 3 Image" style="height: 120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Apple Delicious Red Sweet Apple</h3>
+       <del style="color: grey;">199</del> ₹120
+       <p style="color: green; margin-block:2px ">Best deal</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+
+
+       <div class="item-container" id="item1" onclick="location.href='onion.html';">
+     <img src="onion.png" alt="Item 1 Image" style="height: 120px;">
+     <div class="item-info">
+       <h4 class="item-name" style="font-size: 17px;">Onion kandda best price</h4>
+       <div> <del style="color: grey;">22</del> ₹20</div>
+       <p style="color: green; margin-block:2px ">Free Delivery</p>
+       <div id="searchResults" class="search-results"></div>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <!-- आइटम 2 -->
+   <div class="item-container" id="item2" onclick="location.href='potato.html';">
+     <img src="potato.png" alt="potatos " style="height:120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Potatos Aalu best and clean potatos <br> <del>40</del> ₹30</h3>
+       <p style="color: green; margin-block:2px ">best deal</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <div class="item-container" id="item2" onclick="location.href='/tomato.html''';">
+     <img src="tomato.png" alt="Item 3 Image" style="height: 120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Fresh Farm Tomatoes Red Fresh</h3>
+       <del style="color: grey;">42</del> ₹40
+       <p style="color: green; margin-block:2px ">Best deal</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <div class="item-container" id="item1" onclick="location.href='greenchilli.html';">
+     <img src="chilli.png" alt="Item 1 Image" style="height: 120px;">
+     <div class="item-info">
+       <h4 class="item-name" style="font-size: 17px;">Fresh Green Chilli Spicer Green Healthy</h4>
+       <div> <del style="color: grey;">22</del> ₹20</div>
+       <p style="color: green; margin-block:2px ">Free Delivery</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <!-- आइटम 2 -->
+   <div class="item-container" id="item2" onclick="location.href='lemon.html';">
+     <img src="lemon.png" alt="Item 2 Image" style="height: 120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Fresh Lemon Big Size Lemon <br><del>20</del> ₹10</h3>
+       <p style="color: green; margin-block:2px ">Fresh</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <div class="item-container" id="item2" onclick="location.href='ginger.html';">
+     <img src="/new vivek project/ginder.png" alt="Item 3 Image" style="height: 120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Ginger Fresh Cleaned Ginger </h3>
+       <del style="color: grey;">12</del> ₹10
+       <p style="color: green; margin-block:2px ">Fresh </p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+
+
+       <div class="item-container" id="item1" onclick="location.href='coconut.html';">
+     <img src="coconut.png" alt="Item 1 Image" style="height: 120px;">
+     <div class="item-info">
+       <h4 class="item-name" style="font-size: 17px;">Coconut Big Size Clean White Brown Coconut </h4>
+       <div> <del style="color: grey;">55</del> ₹50</div>
+       <p style="color: green; margin-block:2px ">Free Delivery</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <!-- आइटम 2 -->
+   <div class="item-container" id="item2" onclick="location.href='redchilli.html';">
+     <img src="redchilli.png" alt="Item 2 Image" style="height: 120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Red spice Dry Chilli Masala <br><del>60</del> ₹tp</h3>
+       <p style="color: green; margin-block:2px ">Red Spice</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+
+    
+</div>
+
+</div>
+  <div class="header">
+    <p>Cleaning and Households</p>
+  </div>
+<div class="items-scroll-wrapper">
+ <!-- आइटम 1 -->
+<div class="items-row">
+   <div class="item-container" id="item1" id="searchResults"onclick="location.href='greenpeac.html';">
+     <img src="greenpiece.png" alt="Item 1 Image" style="height: 120px;">
+     <div class="item-info">
+       <h4 class="item-name" class="h4" style="font-size: 17px; ">Green peac fresh and green </h4>
+       <div> <del style="color: grey;">60</del> ₹48</div>
+       <p style="color: green; margin-block:2px ">Fresh</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <!-- आइटम 2 -->
+   <div class="item-container" id="item2" onclick="location.href='coriander.html';">
+     <img src="/new vivek project/IMG_20240330_101303.jpg" alt="Item 2 Image" style="height: 119px">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Fresh Coriander In Best Price</h3> <del>22</del> ₹20
+       <p style="color: green; margin-block:2px ">best deal</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <div class="item-container" id="item2" id=""onclick="location.href='apple.html';">
+     <img src="apple.png" alt="Item 3 Image" style="height: 120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Apple Delicious Red Sweet Apple</h3>
+       <del style="color: grey;">199</del> ₹120
+       <p style="color: green; margin-block:2px ">Best deal</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+
+
+       <div class="item-container" id="item1" onclick="location.href='onion.html';">
+     <img src="onion.png" alt="Item 1 Image" style="height: 120px;">
+     <div class="item-info">
+       <h4 class="item-name" style="font-size: 17px;">Onion kandda best price</h4>
+       <div> <del style="color: grey;">22</del> ₹20</div>
+       <p style="color: green; margin-block:2px ">Free Delivery</p>
+       <div id="searchResults" class="search-results"></div>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <!-- आइटम 2 -->
+   <div class="item-container" id="item2" onclick="location.href='potato.html';">
+     <img src="potato.png" alt="potatos " style="height:120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Potatos Aalu best and clean potatos <br> <del>40</del> ₹30</h3>
+       <p style="color: green; margin-block:2px ">best deal</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <div class="item-container" id="item2" onclick="location.href='/tomato.html''';">
+     <img src="tomato.png" alt="Item 3 Image" style="height: 120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Fresh Farm Tomatoes Red Fresh</h3>
+       <del style="color: grey;">42</del> ₹40
+       <p style="color: green; margin-block:2px ">Best deal</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <div class="item-container" id="item1" onclick="location.href='greenchilli.html';">
+     <img src="chilli.png" alt="Item 1 Image" style="height: 120px;">
+     <div class="item-info">
+       <h4 class="item-name" style="font-size: 17px;">Fresh Green Chilli Spicer Green Healthy</h4>
+       <div> <del style="color: grey;">22</del> ₹20</div>
+       <p style="color: green; margin-block:2px ">Free Delivery</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <!-- आइटम 2 -->
+   <div class="item-container" id="item2" onclick="location.href='lemon.html';">
+     <img src="lemon.png" alt="Item 2 Image" style="height: 120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Fresh Lemon Big Size Lemon <br><del>20</del> ₹10</h3>
+       <p style="color: green; margin-block:2px ">Fresh</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <div class="item-container" id="item2" onclick="location.href='ginger.html';">
+     <img src="/new vivek project/ginder.png" alt="Item 3 Image" style="height: 120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Ginger Fresh Cleaned Ginger </h3>
+       <del style="color: grey;">12</del> ₹10
+       <p style="color: green; margin-block:2px ">Fresh </p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+
+
+       <div class="item-container" id="item1" onclick="location.href='coconut.html';">
+     <img src="coconut.png" alt="Item 1 Image" style="height: 120px;">
+     <div class="item-info">
+       <h4 class="item-name" style="font-size: 17px;">Coconut Big Size Clean White Brown Coconut </h4>
+       <div> <del style="color: grey;">55</del> ₹50</div>
+       <p style="color: green; margin-block:2px ">Free Delivery</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <!-- आइटम 2 -->
+   <div class="item-container" id="item2" onclick="location.href='redchilli.html';">
+     <img src="redchilli.png" alt="Item 2 Image" style="height: 120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Red spice Dry Chilli Masala <br><del>60</del> ₹tp</h3>
+       <p style="color: green; margin-block:2px ">Red Spice</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+
+    
+</div>
+
+</div>
+  
+
+<div class="items-scroll-wrapper">
+ <!-- आइटम 1 -->
+<div class="items-row">
+   <div class="item-container" id="item1" id="searchResults"onclick="location.href='greenpeac.html';">
+     <img src="greenpiece.png" alt="Item 1 Image" style="height: 120px;">
+     <div class="item-info">
+       <h4 class="item-name" class="h4" style="font-size: 17px; ">Green peac fresh and green </h4>
+       <div> <del style="color: grey;">60</del> ₹48</div>
+       <p style="color: green; margin-block:2px ">Fresh</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <!-- आइटम 2 -->
+   <div class="item-container" id="item2" onclick="location.href='coriander.html';">
+     <img src="/new vivek project/IMG_20240330_101303.jpg" alt="Item 2 Image" style="height: 119px">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Fresh Coriander In Best Price</h3> <del>22</del> ₹20
+       <p style="color: green; margin-block:2px ">best deal</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <div class="item-container" id="item2" id=""onclick="location.href='apple.html';">
+     <img src="apple.png" alt="Item 3 Image" style="height: 120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Apple Delicious Red Sweet Apple</h3>
+       <del style="color: grey;">199</del> ₹120
+       <p style="color: green; margin-block:2px ">Best deal</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+
+
+       <div class="item-container" id="item1" onclick="location.href='onion.html';">
+     <img src="onion.png" alt="Item 1 Image" style="height: 120px;">
+     <div class="item-info">
+       <h4 class="item-name" style="font-size: 17px;">Onion kandda best price</h4>
+       <div> <del style="color: grey;">22</del> ₹20</div>
+       <p style="color: green; margin-block:2px ">Free Delivery</p>
+       <div id="searchResults" class="search-results"></div>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <!-- आइटम 2 -->
+   <div class="item-container" id="item2" onclick="location.href='potato.html';">
+     <img src="potato.png" alt="potatos " style="height:120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Potatos Aalu best and clean potatos <br> <del>40</del> ₹30</h3>
+       <p style="color: green; margin-block:2px ">best deal</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <div class="item-container" id="item2" onclick="location.href='/tomato.html''';">
+     <img src="tomato.png" alt="Item 3 Image" style="height: 120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Fresh Farm Tomatoes Red Fresh</h3>
+       <del style="color: grey;">42</del> ₹40
+       <p style="color: green; margin-block:2px ">Best deal</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <div class="item-container" id="item1" onclick="location.href='greenchilli.html';">
+     <img src="chilli.png" alt="Item 1 Image" style="height: 120px;">
+     <div class="item-info">
+       <h4 class="item-name" style="font-size: 17px;">Fresh Green Chilli Spicer Green Healthy</h4>
+       <div> <del style="color: grey;">22</del> ₹20</div>
+       <p style="color: green; margin-block:2px ">Free Delivery</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <!-- आइटम 2 -->
+   <div class="item-container" id="item2" onclick="location.href='lemon.html';">
+     <img src="lemon.png" alt="Item 2 Image" style="height: 120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Fresh Lemon Big Size Lemon <br><del>20</del> ₹10</h3>
+       <p style="color: green; margin-block:2px ">Fresh</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <div class="item-container" id="item2" onclick="location.href='ginger.html';">
+     <img src="/new vivek project/ginder.png" alt="Item 3 Image" style="height: 120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Ginger Fresh Cleaned Ginger </h3>
+       <del style="color: grey;">12</del> ₹10
+       <p style="color: green; margin-block:2px ">Fresh </p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+
+
+       <div class="item-container" id="item1" onclick="location.href='coconut.html';">
+     <img src="coconut.png" alt="Item 1 Image" style="height: 120px;">
+     <div class="item-info">
+       <h4 class="item-name" style="font-size: 17px;">Coconut Big Size Clean White Brown Coconut </h4>
+       <div> <del style="color: grey;">55</del> ₹50</div>
+       <p style="color: green; margin-block:2px ">Free Delivery</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <!-- आइटम 2 -->
+   <div class="item-container" id="item2" onclick="location.href='redchilli.html';">
+     <img src="redchilli.png" alt="Item 2 Image" style="height: 120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Red spice Dry Chilli Masala <br><del>60</del> ₹tp</h3>
+       <p style="color: green; margin-block:2px ">Red Spice</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+
+    
+</div>
+
+</div>
+<div class="items-scroll-wrapper">
+ <!-- आइटम 1 -->
+<div class="items-row">
+   <div class="item-container" id="item1" id="searchResults"onclick="location.href='greenpeac.html';">
+     <img src="greenpiece.png" alt="Item 1 Image" style="height: 120px;">
+     <div class="item-info">
+       <h4 class="item-name" class="h4" style="font-size: 17px; ">Green peac fresh and green </h4>
+       <div> <del style="color: grey;">60</del> ₹48</div>
+       <p style="color: green; margin-block:2px ">Fresh</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <!-- आइटम 2 -->
+   <div class="item-container" id="item2" onclick="location.href='coriander.html';">
+     <img src="/new vivek project/IMG_20240330_101303.jpg" alt="Item 2 Image" style="height: 119px">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Fresh Coriander In Best Price</h3> <del>22</del> ₹20
+       <p style="color: green; margin-block:2px ">best deal</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <div class="item-container" id="item2" id=""onclick="location.href='apple.html';">
+     <img src="apple.png" alt="Item 3 Image" style="height: 120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Apple Delicious Red Sweet Apple</h3>
+       <del style="color: grey;">199</del> ₹120
+       <p style="color: green; margin-block:2px ">Best deal</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+
+
+       <div class="item-container" id="item1" onclick="location.href='onion.html';">
+     <img src="onion.png" alt="Item 1 Image" style="height: 120px;">
+     <div class="item-info">
+       <h4 class="item-name" style="font-size: 17px;">Onion kandda best price</h4>
+       <div> <del style="color: grey;">22</del> ₹20</div>
+       <p style="color: green; margin-block:2px ">Free Delivery</p>
+       <div id="searchResults" class="search-results"></div>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <!-- आइटम 2 -->
+   <div class="item-container" id="item2" onclick="location.href='potato.html';">
+     <img src="potato.png" alt="potatos " style="height:120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Potatos Aalu best and clean potatos <br> <del>40</del> ₹30</h3>
+       <p style="color: green; margin-block:2px ">best deal</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <div class="item-container" id="item2" onclick="location.href='/tomato.html''';">
+     <img src="tomato.png" alt="Item 3 Image" style="height: 120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Fresh Farm Tomatoes Red Fresh</h3>
+       <del style="color: grey;">42</del> ₹40
+       <p style="color: green; margin-block:2px ">Best deal</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <div class="item-container" id="item1" onclick="location.href='greenchilli.html';">
+     <img src="chilli.png" alt="Item 1 Image" style="height: 120px;">
+     <div class="item-info">
+       <h4 class="item-name" style="font-size: 17px;">Fresh Green Chilli Spicer Green Healthy</h4>
+       <div> <del style="color: grey;">22</del> ₹20</div>
+       <p style="color: green; margin-block:2px ">Free Delivery</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <!-- आइटम 2 -->
+   <div class="item-container" id="item2" onclick="location.href='lemon.html';">
+     <img src="lemon.png" alt="Item 2 Image" style="height: 120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Fresh Lemon Big Size Lemon <br><del>20</del> ₹10</h3>
+       <p style="color: green; margin-block:2px ">Fresh</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <div class="item-container" id="item2" onclick="location.href='ginger.html';">
+     <img src="/new vivek project/ginder.png" alt="Item 3 Image" style="height: 120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Ginger Fresh Cleaned Ginger </h3>
+       <del style="color: grey;">12</del> ₹10
+       <p style="color: green; margin-block:2px ">Fresh </p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+
+
+       <div class="item-container" id="item1" onclick="location.href='coconut.html';">
+     <img src="coconut.png" alt="Item 1 Image" style="height: 120px;">
+     <div class="item-info">
+       <h4 class="item-name" style="font-size: 17px;">Coconut Big Size Clean White Brown Coconut </h4>
+       <div> <del style="color: grey;">55</del> ₹50</div>
+       <p style="color: green; margin-block:2px ">Free Delivery</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <!-- आइटम 2 -->
+   <div class="item-container" id="item2" onclick="location.href='redchilli.html';">
+     <img src="redchilli.png" alt="Item 2 Image" style="height: 120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Red spice Dry Chilli Masala <br><del>60</del> ₹tp</h3>
+       <p style="color: green; margin-block:2px ">Red Spice</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+
+    
+</div>
+
+</div>
+<div class="items-scroll-wrapper">
+ <!-- आइटम 1 -->
+<div class="items-row">
+   <div class="item-container" id="item1" id="searchResults"onclick="location.href='greenpeac.html';">
+     <img src="greenpiece.png" alt="Item 1 Image" style="height: 120px;">
+     <div class="item-info">
+       <h4 class="item-name" class="h4" style="font-size: 17px; ">Green peac fresh and green </h4>
+       <div> <del style="color: grey;">60</del> ₹48</div>
+       <p style="color: green; margin-block:2px ">Fresh</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <!-- आइटम 2 -->
+   <div class="item-container" id="item2" onclick="location.href='coriander.html';">
+     <img src="/new vivek project/IMG_20240330_101303.jpg" alt="Item 2 Image" style="height: 119px">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Fresh Coriander In Best Price</h3> <del>22</del> ₹20
+       <p style="color: green; margin-block:2px ">best deal</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <div class="item-container" id="item2" id=""onclick="location.href='apple.html';">
+     <img src="apple.png" alt="Item 3 Image" style="height: 120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Apple Delicious Red Sweet Apple</h3>
+       <del style="color: grey;">199</del> ₹120
+       <p style="color: green; margin-block:2px ">Best deal</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+
+
+       <div class="item-container" id="item1" onclick="location.href='onion.html';">
+     <img src="onion.png" alt="Item 1 Image" style="height: 120px;">
+     <div class="item-info">
+       <h4 class="item-name" style="font-size: 17px;">Onion kandda best price</h4>
+       <div> <del style="color: grey;">22</del> ₹20</div>
+       <p style="color: green; margin-block:2px ">Free Delivery</p>
+       <div id="searchResults" class="search-results"></div>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <!-- आइटम 2 -->
+   <div class="item-container" id="item2" onclick="location.href='potato.html';">
+     <img src="potato.png" alt="potatos " style="height:120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Potatos Aalu best and clean potatos <br> <del>40</del> ₹30</h3>
+       <p style="color: green; margin-block:2px ">best deal</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <div class="item-container" id="item2" onclick="location.href='/tomato.html''';">
+     <img src="tomato.png" alt="Item 3 Image" style="height: 120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Fresh Farm Tomatoes Red Fresh</h3>
+       <del style="color: grey;">42</del> ₹40
+       <p style="color: green; margin-block:2px ">Best deal</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <div class="item-container" id="item1" onclick="location.href='greenchilli.html';">
+     <img src="chilli.png" alt="Item 1 Image" style="height: 120px;">
+     <div class="item-info">
+       <h4 class="item-name" style="font-size: 17px;">Fresh Green Chilli Spicer Green Healthy</h4>
+       <div> <del style="color: grey;">22</del> ₹20</div>
+       <p style="color: green; margin-block:2px ">Free Delivery</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <!-- आइटम 2 -->
+   <div class="item-container" id="item2" onclick="location.href='lemon.html';">
+     <img src="lemon.png" alt="Item 2 Image" style="height: 120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Fresh Lemon Big Size Lemon <br><del>20</del> ₹10</h3>
+       <p style="color: green; margin-block:2px ">Fresh</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <div class="item-container" id="item2" onclick="location.href='ginger.html';">
+     <img src="/new vivek project/ginder.png" alt="Item 3 Image" style="height: 120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Ginger Fresh Cleaned Ginger </h3>
+       <del style="color: grey;">12</del> ₹10
+       <p style="color: green; margin-block:2px ">Fresh </p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+
+
+       <div class="item-container" id="item1" onclick="location.href='coconut.html';">
+     <img src="coconut.png" alt="Item 1 Image" style="height: 120px;">
+     <div class="item-info">
+       <h4 class="item-name" style="font-size: 17px;">Coconut Big Size Clean White Brown Coconut </h4>
+       <div> <del style="color: grey;">55</del> ₹50</div>
+       <p style="color: green; margin-block:2px ">Free Delivery</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <!-- आइटम 2 -->
+   <div class="item-container" id="item2" onclick="location.href='redchilli.html';">
+     <img src="redchilli.png" alt="Item 2 Image" style="height: 120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Red spice Dry Chilli Masala <br><del>60</del> ₹tp</h3>
+       <p style="color: green; margin-block:2px ">Red Spice</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+
+    
+</div>
+
+</div>
+<div class="items-scroll-wrapper">
+ <!-- आइटम 1 -->
+<div class="items-row">
+   <div class="item-container" id="item1" id="searchResults"onclick="location.href='greenpeac.html';">
+     <img src="greenpiece.png" alt="Item 1 Image" style="height: 120px;">
+     <div class="item-info">
+       <h4 class="item-name" class="h4" style="font-size: 17px; ">Green peac fresh and green </h4>
+       <div> <del style="color: grey;">60</del> ₹48</div>
+       <p style="color: green; margin-block:2px ">Fresh</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <!-- आइटम 2 -->
+   <div class="item-container" id="item2" onclick="location.href='coriander.html';">
+     <img src="/new vivek project/IMG_20240330_101303.jpg" alt="Item 2 Image" style="height: 119px">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Fresh Coriander In Best Price</h3> <del>22</del> ₹20
+       <p style="color: green; margin-block:2px ">best deal</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <div class="item-container" id="item2" id=""onclick="location.href='apple.html';">
+     <img src="apple.png" alt="Item 3 Image" style="height: 120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Apple Delicious Red Sweet Apple</h3>
+       <del style="color: grey;">199</del> ₹120
+       <p style="color: green; margin-block:2px ">Best deal</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+
+
+  <div class="item-container" id="item1" onclick="location.href='onion.html';">
+     <img src="onion.png" alt="Item 1 Image" style="height: 120px;">
+     <div class="item-info">
+       <h4 class="item-name" style="font-size: 17px;">Onion kandda best price</h4>
+       <div> <del style="color: grey;">22</del> ₹20</div>
+       <p style="color: green; margin-block:2px ">Free Delivery</p>
+       <div id="searchResults" class="search-results"></div>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <!-- आइटम 2 -->
+   <div class="item-container" id="item2" onclick="location.href='potato.html';">
+     <img src="potato.png" alt="potatos " style="height:120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Potatos Aalu best and clean potatos <br> <del>40</del> ₹30</h3>
+       <p style="color: green; margin-block:2px ">best deal</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <div class="item-container" id="item2" onclick="location.href='/tomato.html''';">
+     <img src="tomato.png" alt="Item 3 Image" style="height: 120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Fresh Farm Tomatoes Red Fresh</h3>
+       <del style="color: grey;">42</del> ₹40
+       <p style="color: green; margin-block:2px ">Best deal</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <div class="item-container" id="item1" onclick="location.href='greenchilli.html';">
+     <img src="chilli.png" alt="Item 1 Image" style="height: 120px;">
+     <div class="item-info">
+       <h4 class="item-name" style="font-size: 17px;">Fresh Green Chilli Spicer Green Healthy</h4>
+       <div> <del style="color: grey;">22</del> ₹20</div>
+       <p style="color: green; margin-block:2px ">Free Delivery</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <!-- आइटम 2 -->
+   <div class="item-container" id="item2" onclick="location.href='lemon.html';">
+     <img src="lemon.png" alt="Item 2 Image" style="height: 120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Fresh Lemon Big Size Lemon <br><del>20</del> ₹10</h3>
+       <p style="color: green; margin-block:2px ">Fresh</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <div class="item-container" id="item2" onclick="location.href='ginger.html';">
+     <img src="/new vivek project/ginder.png" alt="Item 3 Image" style="height: 120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Ginger Fresh Cleaned Ginger </h3>
+       <del style="color: grey;">12</del> ₹10
+       <p style="color: green; margin-block:2px ">Fresh </p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+
+
+       <div class="item-container" id="item1" onclick="location.href='coconut.html';">
+     <img src="coconut.png" alt="Item 1 Image" style="height: 120px;">
+     <div class="item-info">
+       <h4 class="item-name" style="font-size: 17px;">Coconut Big Size Clean White Brown Coconut </h4>
+       <div> <del style="color: grey;">55</del> ₹50</div>
+       <p style="color: green; margin-block:2px ">Free Delivery</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <!-- आइटम 2 -->
+   <div class="item-container" id="item2" onclick="location.href='redchilli.html';">
+     <img src="redchilli.png" alt="Item 2 Image" style="height: 120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Red spice Dry Chilli Masala <br><del>60</del> ₹tp</h3>
+       <p style="color: green; margin-block:2px ">Red Spice</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+
+    
+</div>
+
+</div>
+
+<div class="items-scroll-wrapper">
+ <!-- आइटम 1 -->
+<div class="items-row">
+   <div class="item-container" id="item1" id="searchResults"onclick="location.href='greenpeac.html';">
+     <img src="greenpiece.png" alt="Item 1 Image" style="height: 120px;">
+     <div class="item-info">
+       <h4 class="item-name" class="h4" style="font-size: 17px; ">Green peac fresh and green </h4>
+       <div> <del style="color: grey;">60</del> ₹48</div>
+       <p style="color: green; margin-block:2px ">Fresh</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <!-- आइटम 2 -->
+   <div class="item-container" id="item2" onclick="location.href='coriander.html';">
+     <img src="/new vivek project/IMG_20240330_101303.jpg" alt="Item 2 Image" style="height: 119px">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Fresh Coriander In Best Price</h3> <del>22</del> ₹20
+       <p style="color: green; margin-block:2px ">best deal</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <div class="item-container" id="item2" id=""onclick="location.href='apple.html';">
+     <img src="apple.png" alt="Item 3 Image" style="height: 120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Apple Delicious Red Sweet Apple</h3>
+       <del style="color: grey;">199</del> ₹120
+       <p style="color: green; margin-block:2px ">Best deal</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+
+
+       <div class="item-container" id="item1" onclick="location.href='onion.html';">
+     <img src="onion.png" alt="Item 1 Image" style="height: 120px;">
+     <div class="item-info">
+       <h4 class="item-name" style="font-size: 17px;">Onion kandda best price</h4>
+       <div> <del style="color: grey;">22</del> ₹20</div>
+       <p style="color: green; margin-block:2px ">Free Delivery</p>
+       <div id="searchResults" class="search-results"></div>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <!-- आइटम 2 -->
+   <div class="item-container" id="item2" onclick="location.href='potato.html';">
+     <img src="potato.png" alt="potatos " style="height:120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Potatos Aalu best and clean potatos <br> <del>40</del> ₹30</h3>
+       <p style="color: green; margin-block:2px ">best deal</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <div class="item-container" id="item2" onclick="location.href='/tomato.html''';">
+     <img src="tomato.png" alt="Item 3 Image" style="height: 120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Fresh Farm Tomatoes Red Fresh</h3>
+       <del style="color: grey;">42</del> ₹40
+       <p style="color: green; margin-block:2px ">Best deal</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <div class="item-container" id="item1" onclick="location.href='greenchilli.html';">
+     <img src="chilli.png" alt="Item 1 Image" style="height: 120px;">
+     <div class="item-info">
+       <h4 class="item-name" style="font-size: 17px;">Fresh Green Chilli Spicer Green Healthy</h4>
+       <div> <del style="color: grey;">22</del> ₹20</div>
+       <p style="color: green; margin-block:2px ">Free Delivery</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <!-- आइटम 2 -->
+   <div class="item-container" id="item2" onclick="location.href='lemon.html';">
+     <img src="lemon.png" alt="Item 2 Image" style="height: 120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Fresh Lemon Big Size Lemon <br><del>20</del> ₹10</h3>
+       <p style="color: green; margin-block:2px ">Fresh</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <div class="item-container" id="item2" onclick="location.href='ginger.html';">
+     <img src="/new vivek project/ginder.png" alt="Item 3 Image" style="height: 120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Ginger Fresh Cleaned Ginger </h3>
+       <del style="color: grey;">12</del> ₹10
+       <p style="color: green; margin-block:2px ">Fresh </p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+
+
+       <div class="item-container" id="item1" onclick="location.href='coconut.html';">
+     <img src="coconut.png" alt="Item 1 Image" style="height: 120px;">
+     <div class="item-info">
+       <h4 class="item-name" style="font-size: 17px;">Coconut Big Size Clean White Brown Coconut </h4>
+       <div> <del style="color: grey;">55</del> ₹50</div>
+       <p style="color: green; margin-block:2px ">Free Delivery</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+   <!-- आइटम 2 -->
+   <div class="item-container" id="item2" onclick="location.href='redchilli.html';">
+     <img src="redchilli.png" alt="Item 2 Image" style="height: 120px;">
+     <div class="item-info">
+       <h3 class="item-name" style="font-size: 17px;">Red spice Dry Chilli Masala <br><del>60</del> ₹tp</h3>
+       <p style="color: green; margin-block:2px ">Red Spice</p>
+
+     </div>
+     <a href="https://wa.me/7304390321?text=I%20am%20interested%20in%20buying%20soyabin%20with%20%20quantity" target="_blank" role="button" class="buy-now-link">Buy Now</a>
+   </div>
+
+    
+</div>
+
+</div>
+
+
+      <style>
+.items-scroll-wrapper {
+  overflow-x: auto;
+  white-space: nowrap; /* Prevent items from wrapping */
+}
+.h4{
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.items-row {
+  display: inline-flex; /* Use inline-flex to keep items in a single line */
+}
+
+.item-container {
+  width: 45%; /* Adjust as per your preference */
+  border: 1px solid #ddd;
+  margin: 5px;
+  margin-bottom: auto;
+  overflow-x: hidden; /* Enable horizontal scrolling for individual items if needed */
+}
+
+.item-container img {
+  width: 100%;
+  display: block;
+}
+
+.item-info {
+  padding: 15px;
+  background-color: #f9f9f9;
+}
+
+.item-name {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.item-price {
+  margin: 10px 0 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.buy-now-link {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.buy-now-link:hover {
+  background-color: #45a049;
+}
+
+
+      </style>
+      
+      
+      
+      
+
+       
+     <script>
+     
+     
+     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+
+     
+     
+       function scrollToSection(sectionId) {
+           const section = document.getElementById(sectionId);
+           if (section) {
+             section.scrollIntoView({ behavior: 'smooth' });
+           }
+         }
+         function redirectToProductPage(productId) {
+           // Replace the following line with your actual redirection logic
+           alert("Redirecting to product page " + productId);
+         }
+         
+         // Auto-rotate the carousel
+         const carouselImages = document.querySelectorAll(".carousel img");
+         let currentImageIndex = 0;
+         
+         setInterval(() => {
+           carouselImages[currentImageIndex].classList.remove("active");
+           currentImageIndex = (currentImageIndex + 1) % carouselImages.length;
+           carouselImages[currentImageIndex].classList.add("active");
+         }, 5000);
+         function redirectToPage(url) {
+    window.location.href = url;
+}
+
+
+
+// यह फ़ंक्शन सर्च इनपुट के लिए ऑटोकम्प्लीट सुझाव दिखाएगा
+function autocomplete(inp, arr) {
+  var currentFocus;
+  inp.addEventListener("input", function(e) {
+      var a, b, i, val = this.value;
+      closeAllLists();
+      if (!val) { return false;}
+      currentFocus = -1;
+      a = document.createElement("DIV");
+      a.setAttribute("id", this.id + "autocomplete-list");
+      a.setAttribute("class", "autocomplete-items");
+      this.parentNode.appendChild(a);
+      for (i = 0; i < arr.length; i++) {
+        if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+          b = document.createElement("DIV");
+          b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+          b.innerHTML += arr[i].substr(val.length);
+          b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+          b.addEventListener("click", function(e) {
+              inp.value = this.getElementsByTagName("input")[0].value;
+              closeAllLists();
+          });
+          a.appendChild(b);
+        }
+      }
+  });
+  inp.addEventListener("keydown", function(e) {
+      var x = document.getElementById(this.id + "autocomplete-list");
+      if (x) x = x.getElementsByTagName("div");
+      if (e.keyCode == 40) {
+        currentFocus++;
+        addActive(x);
+      } else if (e.keyCode == 38) { //up
+        currentFocus--;
+        addActive(x);
+      } else if (e.keyCode == 13) {
+        e.preventDefault();
+        if (currentFocus > -1) {
+          if (x) x[currentFocus].click();
+        }
+      }
+  });
+  function addActive(x) {
+    if (!x) return false;
+    removeActive(x);
+    if (currentFocus >= x.length) currentFocus = 0;
+    if (currentFocus < 0) currentFocus = (x.length - 1);
+    x[currentFocus].classList.add("autocomplete-active");
+  }
+  function removeActive(x) {
+    for (var i = 0; i < x.length; i++) {
+      x[i].classList.remove("autocomplete-active");
+    }
+  }
+  function closeAllLists(elmnt) {
+    var x = document.getElementsByClassName("autocomplete-items");
+    for (var i = 0; i < x.length; i++) {
+      if (elmnt != x[i] && elmnt != inp) {
+        x[i].parentNode.removeChild(x[i]);
+      }
+    }
+  }
+  document.addEventListener("click", function (e) {
+      closeAllLists(e.target);
+  });
+}
+
+// आइटम्स की एक लिस्ट जिसे आप सर्च सुझाव के रूप में उपयोग कर सकते हैं
+// Sample dataset for demonstration
+const items = [
+  "Fruits & Vegetables",
+  "Oil, Masala & Sauces",
+  "Colddrinks & Juices",
+  "Chocolates & Ice Cream",
+  "Cleaning & Household",
+  "Lights & Households",
+  "Breakfast Food",
+  "Detergents",
+  "Disinfectants", 
+  'Thumbs up'
+];
+
+const searchInput = document.getElementById("searchInput");
+const searchResults = document.getElementById("searchResults");
+
+// Function to perform search and show suggestions
+function searchItems() {
+  const searchText = searchInput.value.toLowerCase();
+  const matchedItems = items.filter(item => item.toLowerCase().includes(searchText));
+  showResults(matchedItems);
+}
+
+// Function to display search results
+function showResults(matchedItems) {
+  if (matchedItems.length > 0) {
+    const html = matchedItems.map(item => `<li>${item}</li>`).join('');
+    searchResults.innerHTML = `<ul>${html}</ul>`;
+    searchResults.style.display = "block";
+  } else {
+    searchResults.innerHTML = "";
+    searchResults.style.display = "none";
+  }
+}
+
+// Event listener for search input
+searchInput.addEventListener("input", searchItems);
+
+// Event listener for clicking on search result
+searchResults.addEventListener("click", function(e) {
+  if (e.target.tagName === "LI") {
+    const selectedItem = e.target.textContent;
+    // Redirect to the corresponding item page or perform other actions
+    console.log("Redirecting to: " + selectedItem);
+    // You can redirect user to the corresponding item page here
+    // Example: window.location.href = "/items/" + encodeURIComponent(selectedItem);
+  }
+});
+
+// Hide search results when clicking outside the search container
+document.addEventListener("click", function(e) {
+  if (!searchResults.contains(e.target) && !searchInput.contains(e.target)) {
+    searchResults.style.display = "none";
+  }
+});
+
+function scrollToSection(sectionId) {
+  var section = document.getElementById(sectionId);
+  section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+
+
+       </script>
+       
+       
+       
+</body>
+</html>
